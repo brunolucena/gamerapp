@@ -1,0 +1,333 @@
+[
+  {
+    "type": "SET_ENVIRONMENT",
+    "payload": {
+      "data": "development"
+    }
+  },
+  {
+    "type": "ADD_ITEM",
+    "payload": {
+      "cashback": null,
+      "forTrade": null,
+      "forSale": null,
+      "gamerId": "aa992d3e-0562-4e15-99c7-e6252c4b7c86",
+      "hasDelivery": true,
+      "id": "b4b59b44-5d49-4fe5-af10-396b93757e90",
+      "imageUrl": "https://images.igdb.com/igdb/image/upload/t_720p/co1ile.jpg",
+      "name": "The Last of Us Remastered",
+      "photos": [],
+      "platform": "PlayStation 4",
+      "productId": "63f1412f-f6a0-4a92-875b-bd8d33e8e170",
+      "price": {
+        "current": 50.0,
+        "original": 100.0
+      },
+      "store": {
+        "id": "aa992d3e-0562-4e15-99c7-e6252c4b7c86",
+        "name": "Bruno",
+        "city": "Indaiatuba",
+        "state": "Sao Paulo",
+        "distance": 0.00013425878593145295,
+        "imageUrl": "https://gamerappblob.blob.core.windows.net/gamerappblobs/loja1.png",
+        "stars": null,
+        "storeRating": null,
+        "trustedDelivery": true,
+        "zipCode": "13339-600",
+        "info": [
+          {
+            "title": "0",
+            "text": "Vendas nos ultimos 3 meses"
+          },
+          {
+            "title": "0",
+            "text": "Trocas nos ultimos 3 meses"
+          }
+        ]
+      },
+      "gamer": null,
+      "quantity": 1
+    }
+  },
+  {
+    "type": "GET_DASHBOARD_V3",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "/Dashboard/v1",
+        "data": {
+          "gamerId": "9a285c56-f72d-46fa-a3d0-57751c7a4653",
+          "searchText": "",
+          "page": 2
+        }
+      }
+    }
+  },
+  {
+    "type": "LOGIN",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "/Auth/Login/v1",
+        "data": {
+          "email": "bruno.lucenac@gmail.com",
+          "password": "553868"
+        }
+      }
+    }
+  },
+  {
+    "type": "GET_TRADE_REQUEST_DETAILS",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "TradeRequest/Details/v1",
+        "data": {
+          "AutoTradeId": null,
+          "FromGamerId": "aa992d3e-0562-4e15-99c7-e6252c4b7c86",
+          "SelectedGamerProductCatalogId": "a56405e2-597a-44cb-a981-b489fddea0af",
+          "ToGamerId": "39913533-2c3d-4c96-9dea-bf1d0ca28dac",
+          "TradeRequestId": null
+        }
+      }
+    }
+  },
+  {
+    "type": "SAVE_TRADE_REQUEST",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "TradeRequest/SendRequest/v2",
+        "data": {
+          "AutoTradeId": "faa57424-2d4e-497e-9df0-c0264bcc6891",
+          "GamerId": "9a285c56-f72d-46fa-a3d0-57751c7a4653",
+          "GamerParts": [
+            {
+              "GamerId": "9a285c56-f72d-46fa-a3d0-57751c7a4653",
+              "OfferedPrice": 0
+            },
+            {
+              "GamerId": "3d8f1b87-3070-41ad-937a-a1a9b997e931",
+              "OfferedPrice": 0
+            }
+          ],
+          "GamerProductCatalogIds": [
+            "f62f7944-1bcc-4aab-ab99-a0bdfb387a93",
+            "3e8591d3-60a7-4d39-905f-36158bc20326"
+          ],
+          "RootTradeId": "",
+          "TradeRequestId": ""
+        }
+      }
+    }
+  },
+  {
+    "type": "SAVE_TRADE_REQUEST",
+    "payload": {
+      "request": {
+        "data": {
+          "AutoTradeId": "5c59548d-ae81-46dd-8b55-6ddc288affee",
+          "GamerId": "",
+          "GamerParts": [
+            {"GamerId": "", "OfferedPrice": 0},
+            {
+              "GamerId": "eaffcfb6-cf2e-45af-9873-dc9718a71657",
+              "OfferedPrice": 0
+            }
+          ],
+          "GamerProductCatalogIds": [
+            "0fed443f-d20a-4132-9d15-2b9c745e3091",
+            "8cd5af2d-5086-4b73-bc8b-6b722a1e9cb9"
+          ],
+          "RootTradeId": "",
+          "TradeRequestId": ""
+        },
+        "method": "POST",
+        "url": "TradeRequest/SendRequest/v2"
+      }
+    }
+  },
+  {
+    "type": "ACCEPT_TRADE_REQUEST",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "TradeRequest/ChangeStatus/v1",
+        "data": {
+          "gamerId": "3eefa9f6-6c59-4a28-9eca-37f2afa443cd",
+          "status": 1,
+          "tradeRequestId": "1143eeda-8129-4291-ac49-50478e84affe"
+        }
+      }
+    }
+  },
+  {
+    "type": "CREATE_STORE",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "/Store/Add/v1",
+        "data": {
+          "addressDistrict": "Jardim Novo Horizonte",
+          "addressNumber": "22",
+          "addressStreet": "Rua Luiz Eugênio da Silveira Filho",
+          "addressType": "Casa",
+          "cityId": "5f98dae3-56d7-44ec-a8d8-1c4f1f543502",
+          "complement": "Apt 1",
+          "document": "015.235.501-85",
+          "gamerId": "9692f546-d344-45af-8d82-5459de886188",
+          "storeName": "Bruno store (Excluir)",
+          "storeType": 1,
+          "verified": false,
+          "zipCode": "13339-600"
+        }
+      }
+    }
+  },
+  {
+    "type": "LEVEL_UP",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "Achievements/LevelUp/v1",
+        "data": {
+          "gamerId": "3790d437-32e2-4cd0-a659-73b5a0eee34a"
+        }
+      }
+    }
+  },
+  {
+    "type": "LEVEL_UP_SUCESS",
+    "payload": {
+      "data": {
+        "gamerId": "0f185ed3-4f78-439e-8ee6-5f7818c576e6",
+        "rankTitle": "Ovelha Exploradora",
+        "totalExperiencePoints": 6000,
+        "rankImageUrl": null,
+        "levelUp": true,
+        "achievementRankId": "02769666-ee28-4547-ba65-2a8469e5d8fe",
+        "nextRankTitle": "Heroi da Guitarra",
+        "experiencePointsNeeded": 1000,
+        "nextRankUrl": ""
+      },
+      "status": 200,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "content-type": "application/json; charset=utf-8",
+        "strict-transport-security": "max-age=2592000",
+        "vary": "Accept-Encoding",
+        "date": "Sat, 11 Jul 2020 00:30:33 GMT",
+        "server": "Kestrel"
+      },
+      "config": {
+        "url": "Achievements/LevelUp/v1",
+        "method": "post",
+        "data": "{\"gamerId\":\"0f185ed3-4f78-439e-8ee6-5f7818c576e6\"}",
+        "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json;charset=utf-8",
+          "Authorization": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1OTQ0MjczOTMsImV4cCI6MTYyNTk2MzM5MywiaWF0IjoxNTk0NDI3MzkzLCJpc3MiOiJHYW1lckFwcEFwaSIsImF1ZCI6ImdhbWVyYXBwIn0.A33K9LMjWdclSxwH5nLsLGIAEvH-_OfZY7AO3YRh8j0"
+        },
+        "baseURL": "https://gamerapp-api-dev.azurewebsites.net",
+        "transformRequest": [null],
+        "transformResponse": [null],
+        "timeout": 0,
+        "withCredentials": true,
+        "responseType": "json",
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1
+      },
+      "request": {
+        "UNSENT": 0,
+        "OPENED": 1,
+        "HEADERS_RECEIVED": 2,
+        "LOADING": 3,
+        "DONE": 4,
+        "readyState": 4,
+        "status": 200,
+        "timeout": 0,
+        "withCredentials": true,
+        "upload": {},
+        "_aborted": false,
+        "_hasError": false,
+        "_method": "POST",
+        "_response": "{\"gamerId\":\"0f185ed3-4f78-439e-8ee6-5f7818c576e6\",\"rankTitle\":\"Ovelha Exploradora\",\"totalExperiencePoints\":6000.0,\"rankImageUrl\":null,\"levelUp\":true,\"achievementRankId\":\"02769666-ee28-4547-ba65-2a8469e5d8fe\",\"nextRankTitle\":\"Heroi da Guitarra\",\"experiencePointsNeeded\":1000.0,\"nextRankUrl\":\"\"}",
+        "_url": "https://gamerapp-api-dev.azurewebsites.net/Achievements/LevelUp/v1",
+        "_timedOut": false,
+        "_trackingName": "unknown",
+        "_incrementalEvents": false,
+        "responseHeaders": {
+          "Transfer-Encoding": "chunked",
+          "Content-Type": "application/json; charset=utf-8",
+          "Strict-Transport-Security": "max-age=2592000",
+          "Vary": "Accept-Encoding",
+          "Date": "Sat, 11 Jul 2020 00:30:33 GMT",
+          "Server": "Kestrel"
+        },
+        "_requestId": null,
+        "_cachedResponse": {
+          "gamerId": "0f185ed3-4f78-439e-8ee6-5f7818c576e6",
+          "rankTitle": "Ovelha Exploradora",
+          "totalExperiencePoints": 6000,
+          "rankImageUrl": null,
+          "levelUp": true,
+          "achievementRankId": "02769666-ee28-4547-ba65-2a8469e5d8fe",
+          "nextRankTitle": "Heroi da Guitarra",
+          "experiencePointsNeeded": 1000,
+          "nextRankUrl": ""
+        },
+        "_headers": {
+          "accept": "application/json, text/plain, */*",
+          "content-type": "application/json;charset=utf-8",
+          "authorization": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1OTQ0MjczOTMsImV4cCI6MTYyNTk2MzM5MywiaWF0IjoxNTk0NDI3MzkzLCJpc3MiOiJHYW1lckFwcEFwaSIsImF1ZCI6ImdhbWVyYXBwIn0.A33K9LMjWdclSxwH5nLsLGIAEvH-_OfZY7AO3YRh8j0"
+        },
+        "_responseType": "json",
+        "_sent": true,
+        "_lowerCaseResponseHeaders": {
+          "transfer-encoding": "chunked",
+          "content-type": "application/json; charset=utf-8",
+          "strict-transport-security": "max-age=2592000",
+          "vary": "Accept-Encoding",
+          "date": "Sat, 11 Jul 2020 00:30:33 GMT",
+          "server": "Kestrel"
+        },
+        "_subscriptions": [],
+        "responseURL": "https://gamerapp-api-dev.azurewebsites.net/Achievements/LevelUp/v1"
+      }
+    }
+  },
+  {
+    "type": "ADD_QUICK_PRODUCTS",
+    "payload": {
+      "request": {
+        "method": "POST",
+        "url": "/Gamer/AddQuickProducts/v1",
+        "data": {
+          "gamerId": "f922eede-3116-4659-844a-a7c076fc4edc",
+          "type": "wishlist",
+          "products": [
+            {
+              "mediaType": "fisica",
+              "platformId": "5c2f0f6e-989b-4166-8f87-3527b98617c0",
+              "productId": "63f1412f-f6a0-4a92-875b-bd8d33e8e170"
+            }
+          ],
+          "welcomeGuideDone": true
+        }
+      }
+    }
+  },
+  {
+    "type": "DELETE_PRODUCT",
+    "payload": {
+      "request": {
+        "data": {
+          "storeProductCatalogId": "948c5d0e-f364-4ad2-b63b-c4540442b08f"
+        },
+        "method": "POST",
+        "url": "/Store/Products/Delete/v1"
+      }
+    }
+  }
+]
